@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hautzy.Controller">
+   <children>
+      <RadioButton fx:id="V1_Radio" layoutX="12.0" layoutY="117.0" mnemonicParsing="false" text="Setting 1" />
+      <RadioButton fx:id="V2_Radio" layoutX="125.0" layoutY="117.0" mnemonicParsing="false" text="Setting 2" />
+      <RadioButton fx:id="V3_Radio" layoutX="239.0" layoutY="117.0" mnemonicParsing="false" text="Setting 3" />
+      <TextField fx:id="Angle_Field" layoutX="165.0" layoutY="175.0" prefHeight="27.0" prefWidth="104.0" />
+      <Label layoutX="38.0" layoutY="26.0" text="Projectile Motion Calculator">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="90.0" text="Launcher Setting">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="180.0" text="Launcher Angle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="167.0" text="º" />
+      <Button fx:id="Calc_Button" layoutX="93.0" layoutY="251.0" mnemonicParsing="false" onAction="#calculate" text="CALCULATE DISTANCE" />
+      <TextField fx:id="Distance_Field" editable="false" layoutX="92.0" layoutY="291.0" />
+   </children>
+</AnchorPane>
